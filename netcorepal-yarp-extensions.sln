@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{07187FF1-BBBA-4EC6-A16B-A88BFB309065}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePal.Yarp.ReverseProxy.ServiceDiscovery", "src\NetCorePal.Yarp.ReverseProxy.ServiceDiscovery\NetCorePal.Yarp.ReverseProxy.ServiceDiscovery.csproj", "{87668A4A-29E2-4022-945C-9763335DCD70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{81D87FA5-51C1-4BC3-A2D3-359BDE912145}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		NuGet.config = NuGet.config
+		README.md = README.md
+		eng\versions.props = eng\versions.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87668A4A-29E2-4022-945C-9763335DCD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87668A4A-29E2-4022-945C-9763335DCD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87668A4A-29E2-4022-945C-9763335DCD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87668A4A-29E2-4022-945C-9763335DCD70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87668A4A-29E2-4022-945C-9763335DCD70} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82B031CC-A5AC-4C7B-BC85-EFBC09207DBB}
+	EndGlobalSection
+EndGlobal
