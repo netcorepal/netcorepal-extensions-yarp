@@ -22,7 +22,7 @@ namespace NetCorePal.Yarp.ReverseProxy.ServiceDiscovery
                 LoadBalancingPolicy = p.Value.LoadBalancingPolicy,
                 Destinations = p.Value.Destinations.ToDictionary(d => d.Key, d => new DestinationConfig { Address = d.Value.Address, Metadata = d.Value.Metadata })
             });
-            return new ServiceDiscoveryProxyConfig { Clusters = newservices.ToList() };
+            return new ServiceDiscoveryProxyConfig { Clusters = newservices.ToList(), ChangeToken = _client.GetReloadToken() };
         }
     }
 }
