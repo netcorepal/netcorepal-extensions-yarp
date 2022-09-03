@@ -1,5 +1,5 @@
 ﻿using System;
-using NetCorePal.Yarp.ReverseProxy.ServiceDiscovery;
+using NetCorePal.Extensions.Yarp.ServiceDiscovery
 using Yarp.ReverseProxy.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection

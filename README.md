@@ -1,1 +1,3 @@
-# netcorepal-yarp-extensions
+# netcorepal-extensions-yarp
+
+NetCorePal Extensions for YAEP
