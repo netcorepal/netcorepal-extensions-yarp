@@ -10,13 +10,10 @@
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-
-
-
-  <ItemGroup>
-    <None Remove="Yarp.ReverseProxy" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Yarp.ReverseProxy" Version="1.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
   </ItemGroup>
 </Project>

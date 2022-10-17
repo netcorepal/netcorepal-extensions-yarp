@@ -1,0 +1,36 @@
+﻿@page
+@using System.Text.Json
+@model NetCorePal.Extensions.YarpProxyStateUI.Pages.ProxyStateModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>YarpProxyStateLookup</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>路由ID</th>
+                <th>路由配置</th>
+                <th>集群ID</th>
+                <th>集群配置</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var route in Model.ProxyStateLookup.GetRoutes())
+            {
+            <tr>
+                <td>@route.Config.ClusterId</td>
+                <td>@JsonSerializer.Serialize(route.Config)</td>
+                <td>@route.Cluster?.ClusterId</td>
+                <td>@(route.Cluster != null ? JsonSerializer.Serialize(route.Cluster.Model.Config): "")</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+
