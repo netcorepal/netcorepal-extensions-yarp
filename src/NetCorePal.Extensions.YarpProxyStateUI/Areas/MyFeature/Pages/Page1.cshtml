@@ -1,0 +1,31 @@
+﻿@page
+@model NetCorePal.Extensions.YarpProxyStateUI.MyFeature.Pages.Page1Model
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Page1</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>名称</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var a in Model.ProxyStateLookup.GetClusters())
+            {
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+

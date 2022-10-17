@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePal.Extensions.Yarp.ServiceDiscovery", "src\NetCorePal.Extensions.Yarp.ServiceDiscovery\NetCorePal.Extensions.Yarp.ServiceDiscovery.csproj", "{B9913396-5C97-4296-97A4-9F0D7716A1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePal.Extensions.YarpProxyStateUI", "src\NetCorePal.Extensions.YarpProxyStateUI\NetCorePal.Extensions.YarpProxyStateUI.csproj", "{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +27,17 @@ Global
 		{B9913396-5C97-4296-97A4-9F0D7716A1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9913396-5C97-4296-97A4-9F0D7716A1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9913396-5C97-4296-97A4-9F0D7716A1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B9913396-5C97-4296-97A4-9F0D7716A1E6} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
+		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82B031CC-A5AC-4C7B-BC85-EFBC09207DBB}
