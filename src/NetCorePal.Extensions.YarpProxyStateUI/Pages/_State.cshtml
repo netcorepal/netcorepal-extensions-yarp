@@ -11,23 +11,27 @@
     <link rel="stylesheet" href="/_static/css/bootstrap.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">路由ID</div>
-            <div class="col-md-5">路由配置</div>
-            <div class="col-md-1">集群ID</div>
-            <div class="col-md-5">集群配置</div>
-        </div>
-        @foreach (var route in Model.ProxyStateLookup.GetRoutes())
-        {
-            <div class="row">
-                <div class="col-md-1">@route.Config.ClusterId</div>
-                <div class="col-md-5">@JsonSerializer.Serialize(route.Config)</div>
-                <div class="col-md-1">@route.Cluster?.ClusterId</div>
-                <div class="col-md-5">@(route.Cluster != null ? JsonSerializer.Serialize(route.Cluster.Model.Config): "")</div>
-            </div>
-        }
-    </div>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>路由ID</th>
+                <th>路由配置</th>
+                <th>集群ID</th>
+                <th>集群配置</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var route in Model.ProxyStateLookup.GetRoutes())
+            {
+                <tr>
+                    <td>@route.Config.ClusterId</td>
+                    <td>@JsonSerializer.Serialize(route.Config)</td>
+                    <td>@route.Cluster?.ClusterId</td>
+                    <td>@(route.Cluster != null ? JsonSerializer.Serialize(route.Cluster.Model.Config): "")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </body>
 </html>
 
