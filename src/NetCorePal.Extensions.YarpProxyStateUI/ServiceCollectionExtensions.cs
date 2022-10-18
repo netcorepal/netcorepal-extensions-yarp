@@ -15,8 +15,13 @@ namespace Microsoft.Extensions.DependencyInjection
 		}
 		public static void UseYarpProxyStateUI(this IApplicationBuilder builder, int port)
 		{
-			builder.UseStaticFiles(new StaticFileOptions { FileProvider = new EmbeddedFileProvider(typeof(ServiceCollectionExtensions).Assembly) });
+			builder.UseStaticFiles(new StaticFileOptions
+			{
+				RequestPath = "/_static",
+				FileProvider = new EmbeddedFileProvider(typeof(ServiceCollectionExtensions).Assembly, "NetCorePal.Extensions.YarpProxyStateUI.wwwroot")
+			});
 			builder.UseEndpoints(endpoint => endpoint.MapRazorPages().RequireHost($"*:{port}"));
+
 		}
 	}
 }
