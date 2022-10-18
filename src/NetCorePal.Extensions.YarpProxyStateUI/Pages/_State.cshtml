@@ -25,9 +25,9 @@
             {
                 <tr>
                     <td>@route.Config.ClusterId</td>
-                    <td>@JsonSerializer.Serialize(route.Config)</td>
+                    <td><pre>@JsonSerializer.Serialize(route.Config, new JsonSerializerOptions { WriteIndented = true })</pre></td>
                     <td>@route.Cluster?.ClusterId</td>
-                    <td>@(route.Cluster != null ? JsonSerializer.Serialize(route.Cluster.Model.Config,new JsonSerializerOptions { WriteIndented = true }): "")</td>
+                    <td><pre>@(route.Cluster != null ? JsonSerializer.Serialize(route.Cluster.Model.Config, new JsonSerializerOptions { WriteIndented = true }): "")</pre></td>
                 </tr>
             }
         </tbody>
