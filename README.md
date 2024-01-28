@@ -6,7 +6,7 @@
 [![MyGet Preview](https://img.shields.io/myget/netcorepal/vpre/NetCorePal.Yarp.ReverseProxy.Dashboard?label=preview)](https://www.myget.org/feed/netcorepal/package/nuget/NetCorePal.Yarp.ReverseProxy.Dashboard)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/netcorepal/netcorepal-extensions-yarp/blob/main/LICENSE)
 
-The Extensions for [YAEP](https://github.com/microsoft/reverse-proxy)
+The Extensions for [YARP](https://github.com/microsoft/reverse-proxy)
 
 ## Package List
 
