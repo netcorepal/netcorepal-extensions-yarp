@@ -13,9 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 		eng\versions.props = eng\versions.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePal.Extensions.Yarp.ServiceDiscovery", "src\NetCorePal.Extensions.Yarp.ServiceDiscovery\NetCorePal.Extensions.Yarp.ServiceDiscovery.csproj", "{B9913396-5C97-4296-97A4-9F0D7716A1E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCorePal.Yarp.ServiceDiscovery", "src\NetCorePal.Yarp.ServiceDiscovery\NetCorePal.Yarp.ServiceDiscovery.csproj", "{B9913396-5C97-4296-97A4-9F0D7716A1E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePal.Extensions.YarpProxyStateUI", "src\NetCorePal.Extensions.YarpProxyStateUI\NetCorePal.Extensions.YarpProxyStateUI.csproj", "{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePal.Yarp.ReverseProxy.Dashboard", "src\NetCorePal.Yarp.ReverseProxy.Dashboard\NetCorePal.Yarp.ReverseProxy.Dashboard.csproj", "{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates", "src\NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates\NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates.csproj", "{EF55F855-1B26-47A0-A0F4-61C0B482BADF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BEE4A397-41B9-4EFC-A37C-C74F1A97ACBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates.Tests", "test\NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates.Tests\NetCorePal.Yarp.Kubernetes.Controller.IngressCertificates.Tests.csproj", "{85BA9DE7-5526-4937-8C40-4EC3D2DD4455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngressControllerTestWebHost", "test\IngressControllerTestWebHost\IngressControllerTestWebHost.csproj", "{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +39,18 @@ Global
 		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF55F855-1B26-47A0-A0F4-61C0B482BADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF55F855-1B26-47A0-A0F4-61C0B482BADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF55F855-1B26-47A0-A0F4-61C0B482BADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF55F855-1B26-47A0-A0F4-61C0B482BADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85BA9DE7-5526-4937-8C40-4EC3D2DD4455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BA9DE7-5526-4937-8C40-4EC3D2DD4455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BA9DE7-5526-4937-8C40-4EC3D2DD4455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BA9DE7-5526-4937-8C40-4EC3D2DD4455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +58,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B9913396-5C97-4296-97A4-9F0D7716A1E6} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
 		{10DFF0FD-CF81-4C18-AFA5-2EEACEAC0845} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
+		{EF55F855-1B26-47A0-A0F4-61C0B482BADF} = {07187FF1-BBBA-4EC6-A16B-A88BFB309065}
+		{85BA9DE7-5526-4937-8C40-4EC3D2DD4455} = {BEE4A397-41B9-4EFC-A37C-C74F1A97ACBE}
+		{4AB4F9D3-6C63-44E3-8484-2CC0DD460E33} = {BEE4A397-41B9-4EFC-A37C-C74F1A97ACBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82B031CC-A5AC-4C7B-BC85-EFBC09207DBB}

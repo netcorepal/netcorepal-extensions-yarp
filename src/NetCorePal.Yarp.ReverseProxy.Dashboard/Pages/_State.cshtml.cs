@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Yarp.ReverseProxy;
-namespace NetCorePal.Extensions.YarpProxyStateUI.Pages;
+namespace NetCorePal.Yarp.ReverseProxy.Dashboard.Pages;
 
 public class ProxyStateModel : PageModel
 {
@@ -12,12 +12,6 @@ public class ProxyStateModel : PageModel
     public ProxyStateModel(IProxyStateLookup proxyStateLookup)
     {
         this.ProxyStateLookup = proxyStateLookup;
-    }
-
-
-    public void OnGet()
-    {
-
     }
 }
 

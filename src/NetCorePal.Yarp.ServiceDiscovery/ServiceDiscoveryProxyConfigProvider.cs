@@ -1,7 +1,7 @@
 ﻿using NetCorePal.ServiceDiscovery;
 using Yarp.ReverseProxy.Configuration;
 
-namespace NetCorePal.Extensions.Yarp.ServiceDiscovery
+namespace NetCorePal.Yarp.ServiceDiscovery
 {
     public class ServiceDiscoveryProxyConfigProvider : IProxyConfigProvider
     {
